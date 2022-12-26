@@ -11,6 +11,7 @@ private:
     std::vector<Mix_Music*>music;
 public:
     audio()noexcept;
+    audio(const audio &a)noexcept;
     ~audio()noexcept;
     void add_music(std::string &file)noexcept;
     void play_music(int ptr, int count)noexcept;

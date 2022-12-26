@@ -10,6 +10,11 @@ audio::audio() noexcept {
     //todo error
 }
 
+audio::audio(const audio &a) noexcept {
+    this->music = a.music;
+    this->ptr = a.ptr;
+}
+
 audio::~audio() noexcept {
     for(auto &i:music){
         Mix_FreeMusic(i);
