@@ -18,7 +18,7 @@ public:
     void clear()noexcept;
     void update(item &it)noexcept;
     void draw()noexcept;
-    void draw_back(u_int8_t r, u_int8_t g, u_int8_t b, u_int8_t a)noexcept;
+    void draw_back(uint8_t r, uint8_t g, uint8_t b, uint8_t a)noexcept;
 };
 
 
